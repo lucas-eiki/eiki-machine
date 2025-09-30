@@ -19,33 +19,35 @@
             <li><a>Calculadora</a></li>
         </ul>
     </header>
-    <!-- contêiner principal -->
+    <h1>Eiki's Machine</h1>
     <div id="container">
-        <!-- título da página -->
-        <h1>Eiki's Machine</h1>
-        <!-- entrada de valor -->
-        <input id="inputValue" type="text" placeholder="Digite o valor">
-        <!-- seleção da base -->
-        <select id="inputBase">
-            <option value="decimal">Decimal</option>
-            <option value="hexadecimal">Hexadecimal</option>
-            <option value="octal">Octal</option>
-            <option value="binario">Binário</option>
-        </select>
-        <br><br>
-        <!-- opções de conversão -->
-        <h3>Converter para:</h3>
-        <div class="basesConverter">
-            <input type="checkbox" id="convertDecimal"><label for="convertDecimal">Decimal</label>
-            <input type="checkbox" id="convertHexadecimal"><label for="convertHexadecimal">Hexadecimal</label>
-            <input type="checkbox" id="convertOctal"><label for="convertOctal">Octal</label>
-            <input type="checkbox" id="convertBinario"><label for="convertBinario">Binário</label>
+        <div>
+            <input id="inputValue" type="text" placeholder="Digite o valor">
+            <select id="inputBase">
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+                <option value="binario">Binário</option>
+            </select>
         </div>
-        <br><br>
-        <!-- botão de conversão -->
+        <div>
+            <h3>Converter para:</h3>
+            <div class="basesConverter">
+                <input type="checkbox" id="convertDecimal"><label for="convertDecimal">Decimal</label>
+                <input type="checkbox" id="convertHexadecimal"><label for="convertHexadecimal">Hexadecimal</label>
+                <input type="checkbox" id="convertOctal"><label for="convertOctal">Octal</label>
+                <input type="checkbox" id="convertBinario"><label for="convertBinario">Binário</label>
+            </div>
+        </div>
+
         <button onclick="converter()">Converter</button>
-        <!-- saída de resultados -->
+
         <div id="output"></div>
+
+        <div id="divHistorico">
+            <h3>Histórico</h3>
+            <div id="historico"></div>
+        </div>
     </div>
     <!-- script javascript -->
     <script src="src/scripts/index.js"></script>

@@ -38,6 +38,9 @@ li {
     width: 80%;
     margin: 50px auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 h1 {
@@ -64,13 +67,21 @@ input[type='checkbox'] {
 input[type='checkbox'] + label {
     background-color: #eee;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 15px;
     transition: .2s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 4px #ccc;
 }
 
 input[type='checkbox'] + label:hover {
     background-color: #ddd;
+}
+
+input[type='checkbox']:checked + label {
+    position: relative;
+    top: 4px;
+    background-color: #bbb;
+    box-shadow: 0 -4px #aaa;
 }
 
 select,
@@ -81,7 +92,6 @@ button {
     cursor: pointer;
 }
 
-/* estilo para o botão */
 button {
     background-color: #ED145B;
     color: #FFFFFF;
@@ -100,4 +110,36 @@ button:hover {
     border: 1px solid #63666A;
     text-align: left;
     display: none;
+}
+
+#divHistorico {
+    display: none;
+}
+
+#historico {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.registro {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.registro + .registro {
+    border-bottom: 2px solid #000;
+}
+
+.registroConversao {
+    display: flex;
+}
+
+.registroConversao p {
+    padding-right: 5px;
+}
+
+.registroConversao p + p {
+    border-left: 2px solid #000;
+    padding-left: 5px;
 }
