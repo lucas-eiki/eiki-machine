@@ -79,9 +79,10 @@ input[type='checkbox'] + label:hover {
 
 input[type='checkbox']:checked + label {
     position: relative;
-    top: 4px;
+    top: 6px;
     background-color: #bbb;
     box-shadow: 0 -4px #aaa;
+    height: 36px;
 }
 
 select,
