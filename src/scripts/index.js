@@ -10,19 +10,19 @@ function converter() {
     var outputHTML = '';
 
     if (document.getElementById('convertDecimal').checked) {
-        output.style.display = 'block';
+        output.style.display = 'flex';
         outputHTML += `<p>Decimal: ${decimalValue}</p>`;
     }
     if (document.getElementById('convertHexadecimal').checked) {
-        output.style.display = 'block';
+        output.style.display = 'flex';
         outputHTML += `<p>Hexadecimal: ${decimalValue.toString(16).toUpperCase()}</p>`;
     }
     if (document.getElementById('convertOctal').checked) {
-        output.style.display = 'block';
+        output.style.display = 'flex';
         outputHTML += `<p>Octal: ${decimalValue.toString(8)}</p>`;
     }
     if (document.getElementById('convertBinario').checked) {
-        output.style.display = 'block'; 
+        output.style.display = 'flex'; 
         outputHTML += `<p>Binário: ${decimalValue.toString(2)}</p>`;
     }
     document.getElementById('output').innerHTML = outputHTML;
