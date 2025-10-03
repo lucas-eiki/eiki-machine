@@ -1,0 +1,96 @@
+.calculadora {
+    background-color: #5E5E5E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.visor {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ipt-number,
+.select-base,
+#resultado {
+    background-color: #BCC59A;
+}
+
+.select-base {
+    width: 60px;
+    font-size: 28px;
+}
+
+.select-base:hover {
+    background-color: #99a17d;
+}
+
+#resultado {
+    width: 100%;
+    max-width: 425px;
+    height: 240px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 32px;
+    padding: 16px;
+}
+
+.resultado-calculo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.operacoes {
+    display: grid;
+    grid-template-areas: 
+    'somar subtrair'
+    'multiplicar dividir';
+    gap: 30px;
+}
+
+.btn-operacao {
+    width: 150px;
+    height: 150px;
+    font-size: 60px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px #ccc;
+    border: none;
+    font-family: "VT323", monospace;
+}
+
+.btn-operacao:active {
+    position: relative;
+    top: 10px;
+    background-color: #eee;
+    box-shadow: 0 0 #ccc;
+
+}
+
+#btn-somar {
+    grid-area: somar;
+}
+
+#btn-subtrair {
+    grid-area: subtrair;
+}
+
+#btn-multiplicar{
+    grid-area: multiplicar;
+}
+
+#btn-dividir {
+    grid-area: dividir;
+}

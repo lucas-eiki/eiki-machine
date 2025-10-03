@@ -7,17 +7,56 @@
     <title>Eiki's Machine</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/calculadora.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img class="logo" src="./src/images/sptech-logo.png" alt="Logo da SPTech">
         <ul class="links">
-            <li><a href="./">Conversor</a></li>
-            <li><a href="./calculadora.html">Calculadora</a></li>
+            <li><a id="link_conversor" href="./index.html">Conversor</a></li>
+            <li><a id="link-calculadora" href="./calculadora.html">Calculadora</a></li>
         </ul>
     </header>
+    <main>
+        <div class="calculadora">
+            <div class="visor">
+                <div>
+                    <input type="text" placeholder="Digite o primeiro número" class="ipt-number" id="ipt-number-1">
+                    <select class="select-base" id="select-base-1">
+                        <option value="decimal">10</option>
+                        <option value="hexadecimal">16</option>
+                        <option value="octal">8</option>
+                        <option value="binario">2</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="Digite o segundo número" class="ipt-number" id="ipt-number-2">
+                    <select class="select-base" id="select-base-2">
+                        <option value="decimal">10</option>
+                        <option value="hexadecimal">16</option>
+                        <option value="octal">8</option>
+                        <option value="binario">2</option>
+                    </select>
+                </div>
+                <div id="resultado"></div>
+            </div>
+            <div class="operacoes">
+                <button class="btn-operacao" id="btn-somar">+</button>
+                <button class="btn-operacao" id="btn-subtrair">-</button>
+                <button class="btn-operacao" id="btn-multiplicar">×</button>
+                <button class="btn-operacao" id="btn-dividir">÷</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="module" src="./src/scripts/calculadora.js"></script>
 </body>
 
 </html>

@@ -41,7 +41,7 @@ function converter() {
     divHistorico.style.display = 'block';
     document.getElementById('historico').innerHTML += `
         <div class='registro'>
-            <p>Número: ${inputValue} na base ${inputBase}</p>
+            <p>Número: ${inputValue.toUpperCase()} na base ${inputBase}</p>
             <div class='registroConversao'>${outputHTML}</div>
         </div>
     `;
