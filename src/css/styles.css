@@ -87,6 +87,7 @@ header {
 
 h1 {
     color: #fff;
+    font-size: 64px;
 }
 
 input[type="text"] {
@@ -100,6 +101,7 @@ input[type="text"] {
 
 h3 {
     color: #fff;
+    font-size: 36px;
 }
 
 .basesConverter {
@@ -107,7 +109,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 12px;
-    min-height: 43px;
+    min-height: 50px;
 }
 
 input[type='checkbox'] {
@@ -121,7 +123,7 @@ input[type='checkbox']+label {
     transition: .2s ease-in-out;
     cursor: pointer;
     box-shadow: 0 4px #ccc;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 input[type='checkbox']+label:hover {
@@ -134,7 +136,7 @@ input[type='checkbox']:checked+label {
     top: 6px;
     background-color: #aaa;
     box-shadow: 0 -4px #999;
-    height: 41px;
+    height: 48px;
 }
 
 select,
@@ -149,7 +151,7 @@ select,
 select {
     width: 180px;
     height: 60px;
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 10px;
     transition: .15s ease-in-out;
 }
@@ -162,7 +164,7 @@ select:hover {
     background-color: #ED145B;
     color: #FFFFFF;
     border: none;
-    font-size: 20px;
+    font-size: 26px;
     width: 300px;
     height: 50px;
     margin-top: 10px;

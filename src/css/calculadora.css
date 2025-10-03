@@ -9,6 +9,9 @@
     padding: 30px;
     border-radius: 20px;
     margin: 0 auto;
+    box-shadow: 8px 8px #444444;
+    border-top: 1.5px solid #fff;
+    border-left: 1.5px solid #fff;
 }
 
 .visor {
@@ -43,6 +46,10 @@
     gap: 20px;
     font-size: 32px;
     padding: 16px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #767676;
+    border-right: 2px solid #767676;
 }
 
 .resultado-calculo {
